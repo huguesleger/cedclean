@@ -1,0 +1,8 @@
+node_modules
+dist
+static
+vendor
+views
+package-lock.json
+composer.lock
+composer.json
