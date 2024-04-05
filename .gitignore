@@ -6,3 +6,4 @@ views
 package-lock.json
 composer.lock
 composer.json
+tests
