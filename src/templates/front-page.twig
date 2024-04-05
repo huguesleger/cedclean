@@ -1,0 +1,42 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-wrapper wrapper-name">
+            </div>
+        </div>
+    </div>    
+<div class="page-container" data-barba="container" data-barba-namespace="accueil">
+    <div id="hero" class="hero hero-home" data-scroll-section>
+       {% include "home/hero.twig" %}
+    </div>
+    <div id="card-hero" class="bg-grey-light padding-b-6" data-scroll-section>
+        {% include "home/part/card-hero.twig" %}
+    </div>
+    <section class="section about" data-scroll-section>
+        {% include "home/part/about.twig" %}
+    </section>
+    <section class="section video" data-scroll-section>
+        {% include "home/part/video.twig" %}
+    </section>
+    <section class="section services bg-grey-light" data-scroll-section>
+        {% include "home/part/services.twig" %}
+    </section>
+    <section class="section insta-feed" data-scroll-section>
+        {% include "home/part/insta-feed.twig" %}
+    </section>
+    <section class="perimeters bg-purple" data-scroll-section>
+        {% include "home/part/perimeters.twig" %}
+    </section>
+    <section class="section eco" data-scroll-section>
+        {% include "home/part/eco.twig" %}
+    </section>
+    <section class="section bg-purple devis" data-scroll-section>
+        {% include "home/part/devis.twig" %}
+    </section>
+    {# <section class="section cta" data-scroll-section>
+        {% include "home/part/cta.twig" %}
+    </section> #}
+</div>
+{% endblock %}

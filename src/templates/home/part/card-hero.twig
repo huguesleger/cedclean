@@ -1,0 +1,22 @@
+<div class="negative-spacing-4"></div>
+<div class="container">
+    <div class="row">
+    {% for post_card_hero in posts_card_hero %}
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <div class="card-header-icon icon-lg">
+                            <i data-lucide="{{post_card_hero.icon_card_hero}}" class="l-icon-lg"></i>
+                        </div>
+                        <div class="card-header-title">
+                            <h3 class="title">{{post_card_hero.title}}</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>{{post_card_hero.meta('desc_card_hero')}}</p>
+                    </div>
+                </div>
+        </div>
+    {% endfor %}                    
+    </div>
+</div>

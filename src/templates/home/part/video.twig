@@ -1,0 +1,14 @@
+<video autoplay muted loop playsinline id="video">
+  <source src="{{post_video.meta('vid_video')}}" type="video/mp4">
+</video>
+<div class="video-content">
+    <h2 class="title-section {% if post_video.meta('txt_video') is not empty %}mb-3{% elseif post_video.meta('button_contact_video') == true or post_video.meta('button_devis_video') == true %}mb-5 {% else %}mb-0{% endif %}">{{post_video.meta('title_video')}}</h2>
+   {% if post_video.meta('txt_video') is not empty %}
+      <p class="{% if post_video.meta('button_contact_video') == true or post_video.meta('button_devis_video') == true %}mb-5{% else %}mb-0{% endif %}">{{post_video.meta('txt_video')}}</p>
+   {% endif %}
+    {% if post_video.meta('button_contact_video') == true %}
+      <a class="btn btn-round btn-sm btn-outline btn-secondary" href="{{site.link}}/contact">Contactez-nous</a>
+    {% elseif post_video.meta('button_devis_video') == true %}
+      <a class="btn btn-round btn-sm btn-outline btn-secondary" href="{{site.link}}/devis">Demandez un devis</a>
+    {% endif %}
+</div>

@@ -1,0 +1,18 @@
+<div class="hero-bg-img" style="background-image: url('{{ post.thumbnail.src }}')" data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-target="#hero"></div>
+{# <div class="bg-shape" data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-target="#hero"></div> #}
+<div class="container position-relative z-index-2">
+    <div class="row">
+        <div class="col-12" data-scroll data-scroll-speed="-1" data-scroll-position="top">
+            <h1 class="hero-title mb-4" data-splitting>{{ post_hero.meta('title_hero') }}</h1>
+            <div class="hero-baseline">
+                <p class="mb-4">{{ post_hero.meta('baseline_hero') }}</p>
+            </div>
+            <div class="hero-btn mb-4">
+                <div class="inner-btn"> 
+                    <a class="btn btn-round btn-sm btn-primary" href="{{site.link}}/demande-de-devis">Demandez un devis</a>
+                    <a class="btn btn-round btn-sm btn-outline btn-primary" href="{{site.link}}/contact">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
