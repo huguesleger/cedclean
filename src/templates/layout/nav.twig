@@ -1,0 +1,18 @@
+{% if nav %}
+    <ul class="navbar-nav ms-auto">
+        {% for item in items %}
+            {% if item != loop.last %}
+                <li class="nav-item{% if item.current %} active{% endif %}" data-namespace="{{item.slug}}">
+                    <a class="nav-link" href="{{ item.link }}">
+                        <span class="item-link">{{ item.title }}</span>
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    {% for item in items %}
+        {% if item == loop.last %}
+            <a class="btn btn-round btn-sm btn-primary btn-demo ms-md-4 ms-lg-5" href="{{ item.link }}">{{ item.title }}</a>            
+        {% endif %}
+    {% endfor %}
+{% endif %}
