@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Vendor
+// ==================
+@import "vendor/splitting";
+
+// Abstracts
+// ==================
+@import "abstract/mixin";
+@import "abstract/variables";
+
+// Base
+// ==================
+@import "base/base";
+
+// Components
+// ==================
+@import "components/buttons";
+@import "components/card";
+@import "components/card-service";
+
+// Layout
+// ==================
+@import "layout/nav";
+@import "layout/hero";
+@import "layout/typography";
+@import "layout/footer";

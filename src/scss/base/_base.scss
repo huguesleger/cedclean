@@ -1,0 +1,155 @@
+body {
+  font-family: "Mulish", sans-serif;
+  //color: #fff;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+#app {
+  position: relative;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.l-icon-md {
+  width: 32px;
+  height: 32px;
+}
+.l-icon-lg {
+  width: 38px;
+  height: 38px;
+}
+
+.negative-spacing-4 {
+  margin-top: -40px;
+}
+
+.padding-b-6 {
+  padding-bottom: 6rem;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.bg-purple {
+  background-color: $primary;
+}
+.section {
+  padding: 6rem 0;
+}
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+}
+
+.wrapper-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.color-blue-secondary {
+  color: $secondary;
+}
+
+.bg-grey-light {
+  background-color: $grey-light;
+}
+
+.list-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $grey-light;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// services
+.wrapper-service {
+  padding: 3rem 5rem;
+  color: #fff;
+}
+
+.wrapper-cards {
+  margin-top: 6rem;
+}
+.wrap-bg-img {
+  position: relative;
+  .bg-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($primary_dark, 0.3);
+    }
+  }
+}
+
+.devis {
+  position: relative;
+  overflow: hidden;
+  .wrap-img-devis {
+    position: absolute;
+    bottom: 0;
+    width: 390px;
+  }
+}
+
+.video {
+  background-size: cover;
+  max-height: 550px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($primary_dark, 0.7);
+  }
+  #video {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .video-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+  }
+}
