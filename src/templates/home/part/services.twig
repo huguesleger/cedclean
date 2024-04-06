@@ -3,18 +3,17 @@
         <div class="d-flex bg-purple">
             <div class="col-lg-6">
                 <div class="h-100">
-                    <img src="../../../images/visu-service-v2.jpg" alt="services" class="img-fluid img-cover">
+                    <img src="{{post_service.meta('img_service')}}" alt="services" class="img-fluid img-cover">
                 </div>
             </div>
             <div class="col-md-8 col-lg-6">
                 <div class="wrapper-service">
-                    <h2 class="title-big fw-bolder mb-3">Services</h2>
-                    <p>CedClean vous propose un large choix de services de nettoyage (nettoyage vapeur, nettoyage par injection extraction, nettoyage par mono brosse)</p>
+                    <h2 class="title-big fw-bolder mb-3">{{post_service.meta('title_service')}}</h2>
+                    <p>{{post_service.meta('txt_service')}}</p>
                     <ul class="list-unstyled">
-                        <li class="list-item"><i class="me-2" data-lucide="car-front"></i>Véhicule (intérieur, extérieur)</li>
-                        <li class="list-item"><i class="me-2" data-lucide="sofa"></i>Canapé - Fauteuil (cuir, tissu)</li>
-                        <li class="list-item"><i class="me-2" data-lucide="bed-double"></i>Matelas (désinfection, détachage)</li>
-                        <li class="list-item"><i class="me-2" data-lucide="home"></i>Tapis (désinfection, élmination de tâche)</li>
+                        {% for post_list_service in posts_list_service %}
+                            <li class="list-item"><i class="me-2" data-lucide="{{post_list_service.icon_service_list}}"></i>{{ post_list_service.title }} {{ post_list_service.desc_service_list }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -24,19 +23,17 @@
 <div class="wrapper-cards">
     <div class="container">
         <div class="row">
+        {% for post_card_service in posts_card_service %}
             <div class="col-md-6 col-lg-4">
                 <div class="card-service">
                     <div class="card-img">
-                        <img src="../../../images/img-car-2.jpg" alt="" class="w-100 img-cover">
+                        <img src="{{post_card_service.thumbnail}}" alt="" class="w-100 img-cover">
                     </div>
                     <div class="card-content">
-                    <h3 class="service-title">Véhicule</h3>
-                    <ul class="list-unstyled">
-                        <li class="">Intérieur</li>
-                        <li class="">Extérieur</li>
-                        <li class="">Polissage</li>
-                        <li>Traitement cuir</li>
-                    </ul>
+                    <h3 class="service-title">{{ post_card_service.title }}</h3>
+                    <div class="mb-3">
+                        <p>{{ post_card_service.desc_service_card }}</p>
+                    </div>
                     </div>
                     <div class="wrap-btn">
                         <a class="btn btn-round btn-sm btn-primary" href="{{site.link}}/demande-de-devis">Demandez un devis</a>
@@ -44,45 +41,7 @@
                     <div class="card-hover"></div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service">
-                    <div class="card-img">
-                        <img src="../../../images/img-lit.jpg" alt="" class="w-100 img-cover">
-                    </div>
-                    <div class="card-content">
-                    <h3 class="service-title">Matelas</h3>
-                    <ul class="list-unstyled">
-                        <li class="">Nettoyage</li>
-                        <li class="">Désinfection</li>
-                        <li class="">Produits naturels</li>
-                    </ul>
-                    </div>
-                    <div class="wrap-btn">
-                        <a class="btn btn-round btn-sm btn-primary" href="{{site.link}}/demande-de-devis">Demandez un devis</a>
-                    </div>
-                    <div class="card-hover"></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service">
-                    <div class="card-img">
-                        <img src="../../../images/img-canape.jpg" alt="" class="w-100 img-cover">
-                    </div>
-                    <div class="card-content">
-                    <h3 class="service-title">Canapé</h3>
-                    <ul class="list-unstyled">
-                        <li class="">Nettoyage</li>
-                        <li class="">Désinfection</li>
-                        <li class="">Produits naturels</li>
-                        <li class="">Traitement cuir</li>
-                    </ul>
-                    </div>
-                    <div class="wrap-btn">
-                        <a class="btn btn-round btn-sm btn-primary" href="{{site.link}}/demande-de-devis">Demandez un devis</a>
-                    </div>
-                    <div class="card-hover"></div>
-                </div>
-            </div>
+        {% endfor %}
         </div>
     </div>
 </div>
