@@ -43,6 +43,32 @@ body {
 }
 .section {
   padding: 6rem 0;
+  .section-icon {
+    display: flex;
+    justify-content: center;
+    color: $secondary;
+    margin-bottom: 0.5rem;
+    svg {
+      margin: 0 0.25rem;
+    }
+  }
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primary_dark;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      height: 3px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 45px;
+      background-color: $secondary;
+    }
+  }
 }
 
 .img-cover {
@@ -58,6 +84,10 @@ body {
 
 .color-blue-secondary {
   color: $secondary;
+}
+
+.color-grey-dark {
+  color: $grey_dark;
 }
 
 .bg-grey-light {

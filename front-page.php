@@ -13,6 +13,8 @@ $timber_post_video		   				= Timber::get_post();
 $context['post_video'] 		 			= $timber_post_video;
 $timber_post_service					= Timber::get_post();
 $context['post_service'] 		 		= $timber_post_service;
+$timber_post_gallery					= Timber::get_post();
+$context['post_gallery'] 		 		= $timber_post_gallery;
 
 
 $context['posts_card_hero'] = Timber::get_posts([

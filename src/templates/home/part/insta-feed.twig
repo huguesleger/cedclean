@@ -1,11 +1,19 @@
 <div class="container">
     <div class="row">
+        <div class="col-12 text-center pb-5">
+        <div class="section-icon">
+            <i data-lucide="image"></i>
+            <i data-lucide="video"></i>
+            <i data-lucide="instagram"></i>
+        </div>
+            <h2 class="section-title">{{post_gallery.meta('title_gallery')}}</h2>
+            <p class="mt-4 color-grey-dark">{{post_gallery.meta('txt_gallery')}}</p>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12">
-            {# {% apply shortcodes %}
-                [instagram feed="78"]
-            {% endapply %} #}
             {{ post_insta.meta('shortcode_insta') }}
-            {{ forminator_form.meta('form_contact')}}
+            {# {{ forminator_form.meta('form_contact')}} #}
         </div>
     </div>
 </div>
