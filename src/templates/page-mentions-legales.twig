@@ -1,0 +1,29 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="page-mentions">
+    <div class="header-page">
+        <div class="header-content">
+        <div class="header-img" style="background-image: url('{{ post.thumbnail.src }}')"></div>
+            <div class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="inner-title">
+                            <h1 class="title-page">{{post.title}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                {{post.paged_content}}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
