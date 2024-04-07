@@ -2,14 +2,21 @@
     <div class="row g-0">
         <div class="col-md-5 col-lg-5">
             <div class="wrapper-txt p-5 h-100 text-light align-items-start">
-                <h2 class="mb-3 fw-bold">CedClean vient à vous !</h2>
-                <p>Nous intervenons sur Montpellier et ses alentours</br><span class="color-blue-secondary fw-bold">Maugio, Candillargues, Baillargues, Saint-Jean de Védas, Lattes etc...</span></p>
-                <p>Besoins de plus d'informations ?</p>
-                <a class="btn btn-round btn-sm btn-secondary" href="{{site.link}}/contact">Contactez-nous</a>
+                <h2 class="mb-3 fw-bold">{{post_perimeters.meta('title_perimeters')}}</h2>
+                <p class="mb-0">{{post_perimeters.meta('txt_perimeters')}}</p>
+                <div class="color-blue-secondary">{{post_perimeters.meta('city_perimeters')}}</div>
+                {% if post_perimeters.meta('contact_perimeters').txt_contact_perimeters is not empty %}
+                    <p>{{post_perimeters.meta('contact_perimeters').txt_contact_perimeters}}</p>
+                {% endif %}        
+                    {% if post_perimeters.meta('contact_perimeters').btn_contact_perimeters == true %}
+                        <a class="btn btn-round btn-sm btn-outline btn-secondary" href="{{site.link}}/contact">Contactez-nous</a>
+                    {% elseif post_perimeters.meta('contact_perimeters').btn_devis_perimeters == true %}
+                        <a class="btn btn-round btn-sm btn-outline btn-secondary" href="{{site.link}}/devis">Demandez un devis</a>
+                    {% endif %}
             </div>
         </div>
         <div class="col-md-7 col-lg-7">
-            <img src="../../../images/visu-deplacement-pano-vf.jpg" class="img-fluid" />
+            <img src="{{post_perimeters.meta('img_perimeters')}}" class="img-fluid img-cover" />
         </div>
     </div>
 </div>

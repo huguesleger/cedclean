@@ -15,6 +15,8 @@ $timber_post_service					= Timber::get_post();
 $context['post_service'] 		 		= $timber_post_service;
 $timber_post_gallery					= Timber::get_post();
 $context['post_gallery'] 		 		= $timber_post_gallery;
+$timber_post_perimeters					= Timber::get_post();
+$context['post_perimeters'] 		 	= $timber_post_perimeters;
 
 
 $context['posts_card_hero'] = Timber::get_posts([
