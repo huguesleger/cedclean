@@ -4,7 +4,7 @@
             <div class="wrapper-txt p-5 h-100 text-light align-items-start">
                 <h2 class="mb-3 fw-bold">{{post_perimeters.meta('title_perimeters')}}</h2>
                 <p class="mb-0">{{post_perimeters.meta('txt_perimeters')}}</p>
-                <div class="color-blue-secondary">{{post_perimeters.meta('city_perimeters')}}</div>
+                <p class="color-blue-secondary fw-bold">{{post_perimeters.meta('city_perimeters')}}</p>
                 {% if post_perimeters.meta('contact_perimeters').txt_contact_perimeters is not empty %}
                     <p>{{post_perimeters.meta('contact_perimeters').txt_contact_perimeters}}</p>
                 {% endif %}        

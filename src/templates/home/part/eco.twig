@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
-            <img src="../../../images/visu-eco.jpg" alt="eco" class="img-fluid">
+            <img src="{{post_eco.meta('img_eco')}}" alt="eco" class="img-fluid">
         </div>
         <div class="col-lg-4 offset-lg-1">
-            <h2 class="title-big fw-bold mb-5">Produits 100% naturel</h2>
-            <p>Tous nos produits utilisés sont 100% naturel, sans danger pour les animaux et les enfants. Ces produits neutralisent les mauvaises odeurs et laisse un parfum frais.</p>
-            <p>Nous portons une attention particulière à la qualité de nos produits et à leur impact sur l'environnement.</p>
+            <h2 class="title-big fw-bold mb-5">{{post_eco.meta('title_eco')}}</h2>
+            <p>{{post_eco.meta('txt_eco')}}</p>
+            <p>{{post_eco.meta('txt_bis_eco')}}</p>
         </div>
     </div>
 </div>
