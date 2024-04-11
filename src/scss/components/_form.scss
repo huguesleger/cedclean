@@ -13,3 +13,57 @@ textarea {
     }
   }
 }
+.forminator-input--wrap:after {
+  background-color: $primary !important;
+}
+
+.forminator-is_active .forminator-label[class*="forminator-floating-"] {
+  color: $primary !important;
+}
+.forminator-checkbox input:checked + span[aria-hidden],
+.forminator-checkbox:hover span.forminator-checkbox-image,
+.forminator-checkbox input:checked ~ span.forminator-checkbox-image {
+  border-color: $primary !important;
+}
+.forminator-checkbox span[aria-hidden]:not(.forminator-checkbox-image) {
+  color: $primary !important;
+}
+
+.forminator-multi-upload .forminator-multi-upload-message p a,
+.forminator-multi-upload .forminator-multi-upload-message p a:visited,
+.forminator-multi-upload .forminator-multi-upload-message p a:hover,
+.forminator-multi-upload .forminator-multi-upload-message p a:focus {
+  color: $primary !important;
+}
+
+.forminator-select2
+  + .forminator-select.select2-container--open
+  .selection
+  .select2-selection--single[role="combobox"] {
+  border-color: $primary !important;
+}
+.forminator-select2
+  + .forminator-select
+  .selection
+  .select2-selection--single[role="combobox"]:before {
+  background-color: $primary !important;
+}
+
+.forminator-select2
+  + .forminator-select.select2-container--open
+  .selection
+  .select2-selection--single[role="combobox"]
+  .select2-selection__arrow {
+  color: $primary !important;
+}
+
+.forminator-select-dropdown-container--open
+  .select2-results
+  .select2-results__options
+  .select2-results__option.select2-results__option--selected {
+  background-color: $primary !important;
+}
+
+.forminator-textarea--wrap:after {
+  border-color: $primary !important;
+}
