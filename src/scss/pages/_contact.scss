@@ -1,0 +1,34 @@
+.form-contact {
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  @include box-shadow;
+  .content-info,
+  .content-form {
+    padding: 3rem;
+  }
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: $primary;
+    color: #fff;
+    .wrap-img {
+      margin-top: 3.5rem;
+      display: flex;
+      justify-content: center;
+      img {
+        max-height: 350px;
+      }
+    }
+    .lucide-facebook {
+      stroke: none;
+      fill: #fff;
+    }
+  }
+}

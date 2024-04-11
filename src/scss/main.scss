@@ -18,6 +18,7 @@
 @import "components/buttons";
 @import "components/card";
 @import "components/card-service";
+@import "components/form";
 
 // Layout
 // ==================
@@ -25,3 +26,7 @@
 @import "layout/hero";
 @import "layout/typography";
 @import "layout/footer";
+
+// Pages
+// ==================
+@import "pages/contact";

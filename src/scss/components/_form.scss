@@ -1,0 +1,15 @@
+textarea {
+  resize: none !important;
+}
+.forminator-custom-form {
+  .forminator-button-submit.btn-submit {
+    background-color: $primary !important;
+    border: 2px solid $primary !important;
+    padding: 0.65rem 1.25rem !important;
+    border-radius: 2rem !important;
+    &:hover {
+      background-color: transparent !important;
+      color: $primary !important;
+    }
+  }
+}

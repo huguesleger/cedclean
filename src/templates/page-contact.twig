@@ -1,0 +1,44 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="page-contact">
+    <div class="header-page">
+        <div class="header-content">
+        <div class="header-img" style="background-image: url('{{ post.thumbnail.src }}')"></div>
+            <div class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="inner-title">
+                            <h1 class="title-page">{{post.title}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-contact">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="content-info">
+                        <div class="content-top">
+                            <h2 class="mb-5">
+                                <span class="fw-bold">CedClean</span>, votre confort notre priorité.
+                            </h2>
+                            <p>Vous souhaitez prendre un rendez-vous ? </br>Envoyez-nous un message, nous vous répondrons dans les plus bref délais.</p>
+                        </div>
+                        <div class="wrap-img">
+                            <img class="img-fluid" src="../images/illu-contact.svg" alt="contactez-moi">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-form">
+                        {{post.paged_content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -3,6 +3,36 @@
   .content-footer {
     border-top: 1px solid $grey_light;
     padding: 1rem 0;
+    position: relative;
+    .inner-footer {
+      display: flex;
+      justify-content: center;
+      .wrap-social {
+        display: flex;
+        position: absolute;
+        right: 0;
+        .lucide-facebook {
+          stroke: none;
+          fill: $primary;
+        }
+        .icon-social {
+          color: $primary;
+        }
+        .link-social {
+          &:not(:last-child) {
+            padding-right: 0.5rem;
+          }
+          &:hover {
+            .lucide-facebook {
+              fill: $primary_dark;
+            }
+            .icon-social {
+              color: $primary_dark;
+            }
+          }
+        }
+      }
+    }
   }
   .logo-footer {
     height: 45px;
