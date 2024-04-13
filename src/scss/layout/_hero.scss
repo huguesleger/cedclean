@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  //height: calc(100vh - 92px);
   height: 550px;
   padding: 2rem 0;
   background-color: #fff;
@@ -141,44 +140,14 @@
 
 @include maxwidth(sm) {
   .hero {
-    .hero-btn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .btn:first-child {
-        margin-right: 0;
-        margin-bottom: 1rem;
-      }
-    }
     .hero-title {
       font-size: 2.5rem;
     }
   }
 }
-@include maxwidth(md) {
-  .hero {
-    .wrapper-element {
-      display: none;
-    }
-    .hero-btn .inner-btn .btn:first-child {
-      margin-right: 0;
-    }
-  }
-}
 @include maxwidth(lg) {
-  .hero {
-    .hero-bg-img,
-    .bg-shape {
-      display: none;
-    }
-  }
   .header-page.header-thank .header-content {
     min-height: 250px;
     height: 250px;
   }
 }
-// @include minmaxwidth(md, xl) {
-//   .hero {
-//     min-height: 750px;
-//   }
-// }
