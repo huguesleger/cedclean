@@ -85,7 +85,7 @@
     height: 100vh;
     clip-path: circle(0% at 91.5% 25px);
     transition: all 0.7s cubic-bezier(0.79, 0.01, 0.33, 1);
-    background-color: $primary;
+    background-color: $primary_dark;
     &.is-open {
       clip-path: circle(100% at 50% 50%);
       transition: clip-path 0.7s cubic-bezier(0.79, 0.01, 0.33, 1);
@@ -104,7 +104,7 @@
       height: 100%;
       align-items: center;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
     }
     .nav-item {
       overflow: hidden;
@@ -115,8 +115,9 @@
       }
     }
     .nav-link {
-      color: $primary;
+      color: #ffffff;
       font-size: 2rem;
+      padding: 0.5rem 1rem;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1;
@@ -182,7 +183,7 @@
         &::before,
         &::after {
           transform-origin: center center;
-          background-color: $primary;
+          background-color: #ffffff;
         }
         &::before {
           transform: translateY(0) rotate(45deg);

@@ -1,8 +1,10 @@
 body {
   font-family: "Mulish", sans-serif;
-  //color: #fff;
   background-color: #fff;
   overflow-x: hidden;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 #app {
