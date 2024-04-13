@@ -22,3 +22,9 @@
     }
   }
 }
+
+@include maxwidth(lg) {
+  .form-devis .block-img {
+    display: none;
+  }
+}
