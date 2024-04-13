@@ -186,3 +186,9 @@ body {
     text-align: center;
   }
 }
+
+@include maxwidth(sm) {
+  .wrapper-service {
+    padding: 3rem;
+  }
+}
