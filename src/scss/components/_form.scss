@@ -67,3 +67,11 @@ textarea {
 .forminator-textarea--wrap:after {
   border-color: $primary !important;
 }
+
+.forminator-response-message.forminator-show {
+  display: none !important;
+}
+
+.forminator-response-message.forminator-loading.forminator-show {
+  display: block !important;
+}

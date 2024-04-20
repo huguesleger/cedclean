@@ -3,6 +3,7 @@
 // Vendor
 // ==================
 @import "vendor/splitting";
+@import "vendor/locomotive-scroll";
 
 // Abstracts
 // ==================
@@ -15,6 +16,7 @@
 
 // Components
 // ==================
+@import "components/loader";
 @import "components/buttons";
 @import "components/card";
 @import "components/card-service";

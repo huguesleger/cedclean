@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+    {% block header %}
+        <header class="header">
+                <nav id="nav-thanks" class="navbar navbar-expand-md">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand" href="{{site.url}}">
+                           <img src="{{custom_logo_url}}" alt="CedClean"/>
+                        </a>					
+                    </div>
+                </nav>
+        </header>
+    {% endblock %}
+{% block content %}
+<div class="page-container" data-barba="container" data-barba-namespace="contact-merci">
+    <div class="header-thanks" data-scroll-section>
+        <div class="header-content" style="background-image: url('{{ post.thumbnail.src }}')"></div>
+    </div>
+        <div class="content-thanks" data-scroll-section>
+            <div class="pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="icon-success">
+                                <i data-lucide="circle-check-big"></i>
+                            </div>
+                            <h2>{{ post_devis_thanks.meta('title_thanks') }}</h2>
+                            <p>{{ post_devis_thanks.meta('txt_thanks') }}<p>
+                            <p>{{ post_devis_thanks.meta('signature_thanks') }}</p>
+                            <p><a href="{{site.url}}" class="btn btn-round btn-primary btn-sm">Retour à l'accueil</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
+{% block footer %}
+{{ function('wp_footer') }}
+    {% block contentFooter %}{% endblock %}
+{% endblock %}

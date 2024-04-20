@@ -1,8 +1,8 @@
 {% extends "base.twig" %}
 
 {% block content %}
-<div class="page-mentions">
-    <div class="header-page">
+<div class="page-container" data-barba="container" data-barba-namespace="mentions">
+    <div class="header-page" data-scroll-section>
         <div class="header-content">
         <div class="header-img" style="background-image: url('{{ post.thumbnail.src }}')"></div>
             <div class="header-title">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    <section class="section" data-scroll-section>
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -196,6 +196,21 @@
   }
 }
 
+#nav-thanks {
+  padding: 1rem;
+  .navbar-brand {
+    z-index: 1;
+    svg,
+    img {
+      width: auto;
+      height: 50px;
+    }
+  }
+  &.navbar > .container-fluid {
+    justify-content: center;
+  }
+}
+
 @include minwidth(lg) {
   #nav {
     padding: 1rem 2rem;
@@ -211,6 +226,9 @@
         margin-right: 1.5rem;
       }
     }
+  }
+  #nav-thanks {
+    padding: 1rem 2rem;
   }
 }
 

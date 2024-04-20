@@ -1,3 +1,12 @@
+html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background-color: #fff;
@@ -7,7 +16,8 @@ body {
   }
 }
 
-#app {
+#app,
+.scroll-content {
   position: relative;
 }
 
@@ -31,9 +41,15 @@ body {
 .negative-spacing-4 {
   margin-top: -40px;
 }
+.negative-spacing-10 {
+  margin-top: -10rem;
+}
 
 .padding-b-6 {
   padding-bottom: 6rem;
+}
+.padding-t-6 {
+  padding-top: 6rem;
 }
 
 .h-100 {
@@ -184,6 +200,19 @@ body {
     color: #fff;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+.content-thanks {
+  .icon-success {
+    color: #78ef9d;
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  h2 {
+    margin-top: 1rem;
   }
 }
 
