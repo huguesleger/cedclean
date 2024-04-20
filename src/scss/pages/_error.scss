@@ -1,0 +1,28 @@
+.page-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: $primary;
+  color: #fff;
+  .wrap-error {
+    position: absolute;
+    font-size: 50vw;
+    line-height: 1;
+    font-weight: 700;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: #5d5ded;
+  }
+  .error-oops {
+    color: $secondary;
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}

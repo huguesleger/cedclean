@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+{% block header %}{% endblock %}
+{% block content %}
+<div class="page-error">
+    <div class="wrap-error">
+        404
+    </div>
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <h2 class="mb-4">
+                    <span class="error-oops">Oops !</span>Page non trouvée
+                </h2>
+                <p>On dirait que rien n'a été trouvé ici.</br>La page que vous recherchez n'existe pas.</p>
+                <a href="{{site.url}}" class="btn btn-round btn-sm btn-secondary mt-3 mt-lg-0">Retour à l'accueil</a>
+            </div>
+        </div>
+    </div>
+</div>    
+{% endblock %}
+
+{% block footer %}
+{{ function('wp_footer') }}
+    {% block contentFooter %}{% endblock %}
+{% endblock %}
