@@ -6,6 +6,15 @@
 
 <body class="{{body_class}}">
     {% block header %}
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-wrapper wrapper-name">
+                    <div class="name">
+                    <img class="logo" src="../images/logo-cedclean-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> 
         <header class="header">
                 <nav id="nav" class="navbar navbar-expand-md">
                     <div class="container-fluid px-0">
@@ -21,25 +30,24 @@
         </header>
     {% endblock %}
     <div class="scroll-content" data-scroll-container>
-        <div id="app" data-barba="wrapper">
+        <div id="app">
             {% block content %}
             {% endblock %}
         </div>
-        <div class="page-transition-backdrop"></div> 
-        {% if post_scrolltop.meta('affichage_scrolltop') == true %}
             <div id="scroll-to-top">
                 <a href="#hero" class="btn-to-top" data-scroll-to>
-                    <i class="fas fa-chevron-up"></i>
+                    <i data-lucide="chevron-up"></i>
                 </a>
             </div>
-        {% endif %}
         {% block footer %}
                 {% block contentFooter %}
                 <footer class="footer" data-scroll-section>
                     {% include 'layout/footer.twig' %}
                 </footer>
                 {% endblock %}
+                <div id="scripts">
             {{ function('wp_footer') }}
+            </div
         {% endblock %} 
     </div>
 </body>

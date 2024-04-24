@@ -108,20 +108,20 @@ class cedclean extends Timber\Site {
 		/** 
 		 *  add class body
 		*/
-		// add_filter( 'body_class', function( $classes ) {
-		// 	if ( is_page_template( 'page-merci.php' ) ) {
-		// 		$classes[] = 'page-thanks';
-		// 	} elseif ( is_page_template( 'page-solution.php' ) ) {
-		// 		$classes[] = 'page-solution';
-		// 	} elseif ( is_page_template( 'page-contact.php' ) ) {
-		// 		$classes[] = 'page-contact';
-		// 	} elseif ( is_page_template( 'page-demo.php' ) ) {
-		// 		$classes[] = 'page-demo';				
-		// 	} elseif ( is_front_page() ){
-		// 		$classes[] = 'page-home';	
-		// 	}	
-		//   return array_merge( $classes);
-		// });
+		add_filter( 'body_class', function( $classes ) {
+			if ( is_page_template( 'page-contact-merci.php' ) ) {
+				$classes[] = 'page-thanks';
+			} elseif ( is_page_template( 'page-demande-de-devis-merci.php' ) ) {
+				$classes[] = 'page-thanks';
+			} elseif ( is_page_template( 'page-contact.php' ) ) {
+				$classes[] = 'page-contact';
+			} elseif ( is_page_template( 'page-demande-de-devis.php' ) ) {
+				$classes[] = 'page-devis';				
+			} elseif ( is_front_page() ){
+				$classes[] = 'page-home';	
+			}	
+		  return array_merge( $classes);
+		});
 		
 	}
 

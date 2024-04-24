@@ -216,6 +216,29 @@ body {
   }
 }
 
+#scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  z-index: 1;
+  .btn-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.45rem;
+    background-color: $secondary;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    &.show {
+      opacity: 1;
+    }
+  }
+}
+
 @include maxwidth(sm) {
   .wrapper-service {
     padding: 3rem;
