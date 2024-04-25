@@ -16,15 +16,15 @@
       font-weight: 800;
     }
     .char {
-      // opacity: 0;
-      // transform: translateY(100%);
+      opacity: 0;
+      transform: translateY(100%);
     }
   }
   .hero-baseline {
     overflow: hidden;
     p {
-      // opacity: 0;
-      // transform: translateY(100%);
+      opacity: 0;
+      transform: translateY(100%);
     }
     span {
       color: $secondary;
@@ -34,8 +34,8 @@
   .hero-btn {
     overflow: hidden;
     .inner-btn {
-      // opacity: 0;
-      // transform: translateY(100%);
+      opacity: 0;
+      transform: translateY(100%);
       .btn {
         width: 184px;
         &:first-child {
@@ -58,6 +58,18 @@
       width: 100%;
       height: 100%;
       background-color: rgba($primary, 0.2);
+    }
+  }
+
+  &.hero-home.bg-hide {
+    &::after {
+      background-color: rgba($primary, 1);
+    }
+  }
+  &.hero-home.bg-hide.img-visible {
+    &::after {
+      background-color: rgba($primary, 0.2);
+      transition: background-color 0.8s;
     }
   }
   .hero-bg-img {

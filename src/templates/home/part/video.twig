@@ -1,7 +1,7 @@
 <video autoplay muted loop playsinline id="video">
   <source src="{{post_video.meta('vid_video')}}" type="video/mp4">
 </video>
-<div class="video-content">
+<div class="video-content" data-scroll data-scroll-speed="1">
     <h2 class="title-section {% if post_video.meta('txt_video') is not empty %}mb-3{% elseif post_video.meta('button_contact_video') == true or post_video.meta('button_devis_video') == true %}mb-5 {% else %}mb-0{% endif %}">{{post_video.meta('title_video')}}</h2>
    {% if post_video.meta('txt_video') is not empty %}
       <p class="{% if post_video.meta('button_contact_video') == true or post_video.meta('button_devis_video') == true %}mb-5{% else %}mb-0{% endif %}">{{post_video.meta('txt_video')}}</p>

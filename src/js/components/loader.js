@@ -1,9 +1,12 @@
 import { gsap } from "gsap";
+import { hero } from "./hero";
+import { titlePage } from "./title-page";
 
 export const loader = function () {
   const loader = document.querySelector(".loader");
   const logo = document.querySelector(".loader .logo");
   const loaderWrapper = document.querySelectorAll(".loader-wrapper");
+  const heroEl = document.querySelector(".hero-home");
 
   const tlSettings = {
     staggerVal: 0.015,
@@ -30,6 +33,18 @@ export const loader = function () {
           delay: 1.5,
           ease: "Expo.easeInOut",
           duration: 1,
+          onStart: function () {
+            if (heroEl) {
+              heroEl.classList.add("bg-hide");
+            }
+          },
+          onComplete: function () {
+            if (heroEl) {
+              hero();
+            } else {
+              titlePage();
+            }
+          },
         });
       },
     });

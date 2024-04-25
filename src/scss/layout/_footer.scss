@@ -43,6 +43,18 @@
   }
 }
 
+.page-home {
+  .footer {
+    padding-bottom: 5.75rem;
+  }
+}
+.page-contact .footer,
+.page-devis .footer {
+  .content-footer {
+    padding-bottom: 2rem;
+  }
+}
+
 @include maxwidth(sm) {
   .footer {
     .content-footer {

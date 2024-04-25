@@ -1,7 +1,7 @@
-<div class="container-fluid px-0">
+<div class="container-fluid px-0" id="perimetersContainer">
     <div class="row g-0">
         <div class="col-md-5 col-lg-5">
-            <div class="wrapper-txt p-5 h-100 text-light align-items-start">
+            <div class="wrapper-txt p-5 h-100 text-light align-items-start bg-purple" data-scroll data-scroll-speed="-1">
                 <h2 class="mb-3 fw-bold">{{post_perimeters.meta('title_perimeters')}}</h2>
                 <p class="mb-0">{{post_perimeters.meta('txt_perimeters')}}</p>
                 <p class="color-blue-secondary fw-bold">{{post_perimeters.meta('city_perimeters')}}</p>
@@ -16,7 +16,9 @@
             </div>
         </div>
         <div class="col-md-7 col-lg-7">
-            <img src="{{post_perimeters.meta('img_perimeters')}}" class="img-fluid img-cover" />
+            <div class="img-inner">
+                <img src="{{post_perimeters.meta('img_perimeters')}}" class="img-fluid img-cover" data-scroll data-scroll-speed="-1"/>
+            </div>
         </div>
     </div>
 </div>

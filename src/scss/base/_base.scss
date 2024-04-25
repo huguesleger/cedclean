@@ -239,6 +239,10 @@ body {
   }
 }
 
+.img-inner {
+  overflow: hidden;
+}
+
 @include maxwidth(sm) {
   .wrapper-service {
     padding: 3rem;

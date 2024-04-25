@@ -203,12 +203,6 @@ new cedclean();
 		return $file;
 	}
 
-
-	/**
-	 * clean wordpress
-	 */
-	// require get_template_directory() . '/cleaner.php';
-
 	/**
 	 * Removes some menus by page.
 	 */
@@ -236,24 +230,6 @@ new cedclean();
 	} 
 	add_action( 'admin_menu', 'menu_homePage' );
 
-	/**
-	 * add menu solutionPage
-	 */	
-// 	function menu_solutionPage(){
-// 		add_menu_page(
-// 			'Post Types',    
-// 			'Solution Page',          
-// 			'edit_posts',           
-// 			'solutionpost/custom-post-solution.php',
-// 			'',                   
-// 			'dashicons-lightbulb', 
-// 			5
-// 		);			
-// } 
-
-
-// add_action( 'admin_menu', 'menu_solutionPage' );
-
 	/** 
 	 *  Remove class body
 	*/
@@ -268,6 +244,7 @@ new cedclean();
 			if ( $value == 'page-template') unset( $classes[ $key ] );
 			if( 0 === strpos( $value, 'postid-' )) unset($classes[$key]);
 			if ( $value == 'single') unset( $classes[ $key ] );
+			if ( $value == 'logged-in') unset( $classes[ $key ] );
 		}
 		return $classes;
 	}	

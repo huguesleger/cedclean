@@ -4,12 +4,12 @@
 <div class="page-container">
     <div id="hero" class="header-page" data-scroll-section>
         <div class="header-content">
-        <div class="header-img" style="background-image: url('{{ post.thumbnail.src }}')"></div>
-            <div class="header-title">
+        <div class="header-img" style="background-image: url('{{ post.thumbnail.src }}')" data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-target="#hero"></div>
+            <div class="header-title" data-scroll data-scroll-speed="-1" data-scroll-position="top">
                 <div class="container">
                     <div class="row">
                         <div class="inner-title">
-                            <h1 class="title-page">{{post.title}}</h1>
+                            <h1 class="title-page" data-splitting>{{post.title}}</h1>
                         </div>
                     </div>
                 </div>

@@ -50,6 +50,14 @@ textarea {
 }
 
 .forminator-select2
+  + .forminator-select
+  .selection
+  .select2-selection--single[role="combobox"]:hover
+  .select2-selection__arrow {
+  color: $primary !important;
+}
+
+.forminator-select2
   + .forminator-select.select2-container--open
   .selection
   .select2-selection--single[role="combobox"]

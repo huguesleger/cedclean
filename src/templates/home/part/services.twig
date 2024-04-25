@@ -1,13 +1,13 @@
 <div class="container">
     <div class="row g-0">
-        <div class="d-lg-flex bg-purple">
+        <div class="d-lg-flex">
             <div class="col-lg-6">
-                <div class="h-100">
-                    <img src="{{post_service.meta('img_service')}}" alt="services" class="img-fluid img-cover">
+                <div class="h-100 img-inner">
+                    <img src="{{post_service.meta('img_service')}}" alt="services" class="img-fluid img-cover" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" >
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="wrapper-service">
+                <div class="wrapper-service bg-purple" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
                     <h2 class="title-big fw-bolder mb-3">{{post_service.meta('title_service')}}</h2>
                     <p>{{post_service.meta('txt_service')}}</p>
                     <ul class="list-unstyled">
@@ -20,14 +20,14 @@
         </div>
     </div>
 </div>
-<div class="wrapper-cards">
+<div class="wrapper-cards" data-scroll data-scroll-speed="1">
     <div class="container">
         <div class="row">
         {% for post_card_service in posts_card_service %}
             <div class="{% if post_card_service != loop.last %}col-md-6 col-lg-4 mb-5 mb-lg-0 {% else %}col-lg-4{% endif %}">
                 <div class="card-service">
                     <div class="card-img">
-                        <img src="{{post_card_service.thumbnail}}" alt="" class="w-100 img-cover">
+                        <img src="{{post_card_service.thumbnail}}" alt="img-{{ post_card_service.title }}" class="w-100 img-cover">
                     </div>
                     <div class="card-content">
                     <h3 class="service-title">{{ post_card_service.title }}</h3>
