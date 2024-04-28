@@ -11,7 +11,6 @@ module.exports = (env, argv) => {
       twig: "./src/twig.js",
       styles: "./src/scss.js",
       app: "./src/js/app.js",
-      // vendors: './src/js/vendors.js',
     },
     output: {
       filename: "js/[name].[chunkhash].js",

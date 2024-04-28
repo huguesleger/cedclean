@@ -83,3 +83,7 @@ textarea {
 .forminator-response-message.forminator-loading.forminator-show {
   display: block !important;
 }
+
+.forminator-g-recaptcha.recaptcha-invisible {
+  opacity: 0 !important;
+}

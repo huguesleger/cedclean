@@ -31,13 +31,13 @@ $context['posts_card_hero'] = Timber::get_posts([
 
 $context['posts_list_service'] = Timber::get_posts([
 	'post_type' => 'list-services',
-	'posts_per_page' => 6,
+	'posts_per_page' => 8,
 	'order'		=> 'ASC'
 ]);
 
 $context['posts_card_service'] = Timber::get_posts([
 	'post_type' => 'card-services',
-	'posts_per_page' => 3,
+	'posts_per_page' => 6,
 	'order'		=> 'ASC'
 ]);
 
